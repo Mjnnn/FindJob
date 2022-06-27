@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindJob</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/styleLogin.css">
+    <link rel="stylesheet" href="./assets/css/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-free-6.1.1-web/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png " href="https://timviec.com.vn/favicon.png">
+</head>
+<style>
+    #note,
+    #note2,
+    #note3,
+    #note4 {
+        color: red;
+    }
+</style>
+
+<body>
+    <div id="waral" style="position: fixed; top: 20%; right: 0; width: 40%;">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <strong>Warning Alert Message -</strong> Các thông tin bạn nhập chưa đúng
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+    <div id="Alert" style="position: fixed; top: 20%; right: 0; width: 40%;">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="fa-solid fa-circle-check"></i>
+            <strong>Success Alert Message -</strong> Đăng ký thành công
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="alert"></button> -->
+            <a href="login.html" style="text-align: right;"><i class="fa-solid fa-xmark"></i>
+            </a>
+        </div>
+    </div>
+    <script>
+        $('#Alert').hide();
+        $('#waral').hide();
+
+    </script>
+    <!-- Nav -->
+    <nav class="header">
+        <div class="container-nav">
+
+            <div class="nav-element">
+                <a href="index.html" class="nav-home">FindJob</a>
+                <ul class="nav-ull" id="navv">
+                    <li class="nav-item"><a href="./index.html" class="nav-link"><b>Trang Chủ</b></a></li>
+                    <li class="nav-item"><a href="job/company.html" class="nav-link">Công ty</a></li>
+                    <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Liên Hệ</a></li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-secondary" style="height: 100%;width: 100%;">
+                            <a href="" class="btn-nav">Tạo CV</a>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" style="height: 100%;width: 100%;">
+                            <a href="login.html" class="btn-nav">Nhà Tuyển Dụng</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success" style="height: 100%;width: 100%;">
+                            <a href="NganhNghe.html" class="btn-nav">Tìm Công Việc</a>
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </nav>
+    <!-- find -->
+
+    <!-- job -->
+    <section class="job-post">
+        <div class="job-container">
+            <div class="acc-content">
+                <div class="row-acc">
+                    <div class="img-acc">
+                        <img src="./assets/image/dangNhap/14_Bnefits_Collaboration-2.svg" alt="">
+                    </div>
+                    <div class="form-acc">
+                        <h3 class="header-form">FindJob
+                            <a href="./registerEploy.html">Bạn là người tìm việc ?</a>
+                        </h3>
+                        <div class="mb-3">
+                            <!-- <label for="formGroupExampleInput" class="form-label">Tên đăng nhập</label> -->
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="Tên đăng nhập">
+                            <p id="note"></p>
+                        </div>
+                        <div class="mb-3">
+                            <!-- <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label> -->
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+                            <p id="note2"></p>
+                        </div>
+                        <div class="mb-3">
+                            <!-- <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label> -->
+                            <input type="password" class="form-control" id="formGroupExampleInput3"
+                                placeholder="Mật khẩu">
+                            <p id="note3"></p>
+                        </div>
+                        <div class="mb-3">
+                            <!-- <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label> -->
+                            <input type="password" class="form-control" id="formGroupExampleInput4"
+                                placeholder="Nhập lại mật khẩu">
+                            <p id="note4"></p>
+                        </div>
+
+                        <div class="col-12">
+
+                            <button type="submit" class="btn btn-primary" onclick="CheckFormValidate()">Đăng kí</button>
+
+                        </div>
+                        <div class="register">
+                            Bạn đã có tài khoản chưa?
+                            <a href="./login.html">Đăng nhập</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="footer-main">
+            <div class="fta ft1">
+                <div class="mg-ft1">
+                    <p>
+                    <h2>Theo Dõi Website Qua:</h2>
+                    </p>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+
+            </div>
+            <div class="ft ft2">
+                <h2>Dành cho người tìm việc</h2>
+                <ul class="list-ft">
+                    <li>
+                        <a href="NganhNghe.html">
+                            <i class="fa-solid fa-angles-right"></i> Công Việc
+                        </a>
+                    </li>
+                    <li>
+                        <a href="NganhNghe.html">
+                            <i class="fa-solid fa-angles-right"></i> Các ngành Hot
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog.html">
+                            <i class="fa-solid fa-angles-right"></i> Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-solid fa-angles-right"></i> Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft ft3">
+                <h2>Dành cho nhà tuyển dụng</h2>
+                <ul class="list-ft">
+                    <li>
+                        <a href="NganhNghe.html">
+                            <i class="fa-solid fa-angles-right"></i> Công việc
+                        </a>
+                    </li>
+                    <li>
+                        <a href="job/company.html">
+                            <i class="fa-solid fa-angles-right"></i> Đề xuất
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog.html">
+                            <i class="fa-solid fa-angles-right"></i> Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-solid fa-angles-right"></i> Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft ft4">
+                <h2>Chi Tiết Liên Hệ </h2>
+                <ul class="list-ft2">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i> 470 Tran Dai Nghia,
+                        Ngu Hanh Son, Da Nang
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i> +84 3136 8443
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i> minhtc.21it@vku.udn.vn
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-phu">
+            <p>Terms and ConditionsPolicy</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navv");
+            if (x.className === "nav-ull") {
+                x.classList.add("dis-none");
+                console.log(x);
+            } else {
+                x.classList.remove("dis-none");
+                console.log(x);
+            }
+        }
+    </script>
+    <!-- form valdidate -->
+    <script>
+        function CheckFormValidate() {
+            CheckFormValidateEmail()
+            CheckFormValidatePass()
+            CheckFormValidateUser()
+            const user = $('formGroupExampleInput')
+            const Email = $('formGroupExampleInput2')
+
+            if (CheckFormValidatePass() && CheckFormValidateUser() && validate() && checkPassAgain()) {
+                $("#Alert").show(0).delay(3000).hide(0);
+
+            } else {
+                $("#waral").show(0).delay(3000).hide(0);
+
+            }
+
+
+
+
+        }
+        function CheckFormValidateUser() {
+
+            let x = document.getElementById('formGroupExampleInput').value;
+            let text = '';
+            if (x == '') {
+                text = " &times; Vui lòng nhập  tên đăng nhập"
+                document.getElementById("note").innerHTML = text;
+                return false
+            }
+            else {
+                text = ''
+            }
+
+            document.getElementById("note").innerHTML = text;
+            return true;
+        }
+        function CheckFormValidateEmail() {
+
+            let x = document.getElementById('formGroupExampleInput2').value;
+            let text = "";
+            if (x == '') {
+                text = " &times; Vui lòng nhập  tên Email"
+                document.getElementById("note2").innerHTML = text;
+                return false
+
+            } else text = ''
+            document.getElementById("note2").innerHTML = text;
+            return true;
+        }
+        function CheckFormValidatePass() {
+            let x = document.getElementById('formGroupExampleInput3').value;
+            if (x.length < 6) {
+                text = " &times; Vui lòng nhập  mật khẩu lớn hơn 6 kí tự"
+                document.getElementById("note3").innerHTML = text;
+                return false
+            }
+            else {
+                text = ''
+            }
+            document.getElementById("note3").innerHTML = text;
+            return true
+        }
+    </script>
+
+    <script>
+        // check email
+        const validateEmail = (email) => {
+            return email.match(
+                /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+        };
+        const validate = () => {
+            const $result = $('#note2');
+            const email = $('#formGroupExampleInput2').val();
+            $result.text('');
+
+            if (validateEmail(email)) {
+                $result.text(email + ' is valid ');
+                $result.css('color', 'green');
+                setTimeout(() => $('#note2').html(''), 1000)
+                return true
+
+            } else {
+                $result.text(email + ' is not valid');
+                $result.css('color', 'red');
+                return false;
+            }
+
+        }
+        $('#formGroupExampleInput2').on('input', validate);
+
+        $('#formGroupExampleInput3').on('input', CheckFormValidatePass);
+
+        $('#formGroupExampleInput').on('input', CheckFormValidateUser);
+
+        //check password
+        $('#formGroupExampleInput4').click(PassAgain())
+
+
+        function checkPassAgain() {
+            return $('#formGroupExampleInput3').val() == $('#formGroupExampleInput4').val()
+
+        }
+
+        function PassAgain() {
+
+            $('#formGroupExampleInput3, #formGroupExampleInput4').on('keyup', function () {
+
+                // $('#formGroupExampleInput4').click(function(){
+                if ($('#formGroupExampleInput4').val().length == 0) {
+                    $('#note4').html('')
+                }
+                else {
+                    if ($('#formGroupExampleInput3').val() == $('#formGroupExampleInput4').val()) {
+                        $('#note4').html('Chính xác').css('color', 'green');
+                        setTimeout(() => $('#note4').html(''), 1000)
+
+
+                    } else
+                        $('#note4').html('Chưa trùng khớp').css('color', 'red');
+
+
+
+                }
+
+            });
+        }
+
+    </script>
+    <!-- check -->
+    <script>
+
+        $('#formGroupExampleInput2').click(function () {
+            CheckFormValidateUser()
+
+
+
+
+
+        })
+        $('#formGroupExampleInput3').click(function () {
+
+            if ($('#formGroupExampleInput2').val().length == 0) {
+                CheckFormValidateEmail()
+            }
+            CheckFormValidateUser()
+
+
+        })
+        $('#formGroupExampleInput4').click(function () {
+            CheckFormValidateUser()
+            CheckFormValidatePass()
+            if ($('#formGroupExampleInput2').val().length == 0) {
+                CheckFormValidateEmail()
+            }
+            if ($('#formGroupExampleInput3').val().length != 0) {
+                PassAgain()
+            }
+
+
+        })
+
+    </script>
+
+
+</body>
+
+
+</html>

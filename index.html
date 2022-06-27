@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Mobile:width<740px -->
+    <!-- tablet: width >= 740px and width < 1024px -->
+    <!-- pc:width >= 1024px -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindJob</title>
+    <link rel="stylesheet" href="./assets/css/styleTest.css">
+    <link rel="stylesheet" href="./assets/css/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-6.1.1-web/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" type="image/png " href="https://timviec.com.vn/favicon.png">
+
+    <!-- <style>
+        .n1 {
+            color: black !important;
+            border-bottom: 1px solid black;
+
+        }
+    </style> -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // $('.nav-ull a').hover(function () {
+            //     $('.nav-link').removeClass("animate__animated animate__flipInY");
+            // });
+            // $('.nav-nav-element .nvv').hover(function () {
+            //     $('.home').addClass("n1");
+            // });
+            $('.abcde a').hover(function () {
+                $('.nav-link').addClass("animate__animated animate__flipInY");
+            });
+            $('.cn-ft').hover(function () {
+                $('.home').addClass("n1");
+            });
+            $('.home').hover(function () {
+                $('.home').addClass("n1");
+            });
+            $('.nav-home').hover(function () {
+                $('.home').addClass("n1");
+            });
+            $('.nav-nav-element2 ').hover(function () {
+                $('.home').addClass("n1");
+            });
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <!-- animx ate__animated animate__heartBeat -->
+    <!-- <script type="text/javascript" src="https://itexpress.vn/API/files/it.snow.js"></script> -->
+    <nav class="header animate__animated animate__bounce">
+        <div class="container-nav">
+
+            <div class="nav-element">
+                <a href="index.html" class="nav-home   ">FindJob</a>
+                <ul class="nav-ull" id="navv">
+                    <li class="nav-item "><a href="./index.html" class="nav-link"><b>Trang Chủ</b></a></li>
+                    <li class="nav-item "><a href="./job/company.html" class="nav-link">Công ty</a></li>
+                    <li class="nav-item "><a href="./blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item "><a href="about.html" class="nav-link">Liên
+                            Hệ</a></li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-secondary" style="height: 100%;">
+                            <a href="job/mycv.html" class="btn-nav">Tạo CV</a>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" style="height: 100%;">
+                            <a href="login.html" class="btn-nav">Nhà Tuyển Dụng</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success" style="height: 100%;">
+                            <a href="NganhNghe.html" class="btn-nav">Tìm Công Việc</a>
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </nav>
+    <!-- find -->
+    <!-- Find -->
+    <div class="bg-image ">
+        <div class="bg-container ">
+            <div class="bg-element">
+                <p class="bg-number">
+                    We have 850,000 great job offers you deserve!
+                </p>
+                <h1 class="bg-content lead">
+                    Your Dream <br>
+                    <span>Job is Waiting</span>
+                </h1>
+                <div class="bg-find">
+                    <form action="" class="form-search">
+                        <input type="text" class="search" placeholder="Find job...">
+
+                        <span class="fa fa-search"></span>
+                        <div class="hello10">
+                            <button><a href="./NganhNghe.html" class="btn-search">Search</a></button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Benefit of web -->
+    <section class="job-post bg-color reveal" id="tt1">
+        <div class="job-list job-container reveal">
+            <div class="list-flex-row ">
+                <div class="benefit-element">
+                    <div style="text-align: center;">
+                        <img src="./assets/image/Benefit/service-02.png" alt="" class="benefit-image">
+                    </div>
+                    <div class="image-content">
+                        <h3 class="content-header" style="text-align: center;">Tạo CV Cho Bản Thân</h3>
+                        <p class="content-content" style="margin-top: 45px;">Tại đây bạn có thể tạo cho mình 1 bộ CV
+                            giúp bạn thuận tiện trong việc tìm việc.</p>
+                    </div>
+                </div>
+                <div class="benefit-element ">
+                    <div style="text-align: center;">
+                        <img src="./assets/image/Benefit/0a5ce1e5-3326-4d86-893c-8a243504c88f.png" alt=""
+                            class="benefit-image">
+                    </div>
+                    <div class="image-content ">
+                        <h3 class="content-header" style="text-align: center;">Tìm Kiếm 1 Cách Nhanh Chóng</h3>
+                        <p class="content-content">Giúp các bạn có thể tìm công việc mình mong
+                            muốn tùy theo lựa chọn
+                            của bản thân.</p>
+                    </div>
+                </div>
+                <div class="benefit-element">
+                    <div style="text-align: center;">
+                        <img src="./assets/image/Benefit/H4sIAAAAAAAAAD2Py07DMBBF_8XrgsaP2GNWJG2iskEsyjpyEttYKm7lJkGA-HdsFLGboznSvfebLDebTp9XSx4IJTsyXT7ihjyjC2f7bN4LuuB7F6K3qffJDH0x76_Rb9aLmd-yBXycHDfSGnAC-Tg4ZmCwlaPIHOKQ7SF8PU1ZPdaPa7hbI6.png"
+                            alt="" class="benefit-image">
+                    </div>
+                    <div class="image-content">
+                        <h3 class="content-header" style="text-align: center;">Thao Tác Dễ Dàng</h3>
+                        <p class="content-content" style="margin-top: 45px;">Chỉ với vài thao tác cơ bản, vài cú click
+                            chuột bạn cũng đã có thể tìm kiếm công việc cho mình.</p>
+                    </div>
+                </div>
+                <div class="benefit-element">
+                    <div style="text-align: center;">
+                        <img src="./assets/image/Benefit/6081_html_m7e3522d6.png" alt="" class="benefit-image">
+                    </div>
+                    <div class="image-content">
+                        <h3 class="content-header" style="text-align: center;">Phù Hợp Với Năng Lực </h3>
+                        <p class="content-content" style="margin-top: 45px;">Tạo cầu nối giúp bạn phát huy hết năng lực
+                            và khả năng của mình trong công việc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Job post -->
+    <section class="job-post reveal ">
+        <div class="job-container-header">
+            <div class="job-header">
+                <p class="header-Categories">
+                    Các Hạng Mục Gợi Ý Cho Bạn
+                </p>
+                <span class="header-current">
+                    <b class="b-job">Chức Danh</b> Và <b class="b-job">Thể Loại</b>
+                </span>
+            </div>
+        </div>
+
+        <div class="job-list list-flex-row">
+            <div class="job-row reveal ">
+                <ul class="category">
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Nhân Viên Kinh Doanh</a>
+                            <span class="number">1253</span>
+                        </div>
+                    </li>
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Nhân Viên Kế Toán
+                            </a>
+                            <span class="number" style="margin-left: 35px;">982</span>
+                        </div>
+                    </li>
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Nhân Viên Kỹ Thuật
+                            </a>
+                            <span class="number" style="margin-left: 25px;">1136</span>
+                        </div>
+                    </li>
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Nhân Viên Bán Hàng
+                            </a>
+                            <span class="number" style="margin-left: 20px;">885</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="job-row reveal">
+                <ul class="category">
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Nhân Viên Hành Chính
+                            </a>
+                            <span class="number">1343</span>
+                        </div>
+                    </li>
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Kế Toán Tổng Hợp</a>
+                            <span class="number" style="margin-left: 35px;">1020</span>
+                        </div>
+                    </li>
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Nhân Viên Văn Phòng</a>
+                            <span class="number" style="margin-left: 15px;">850</span>
+                        </div>
+                    </li>
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Nhân Viên Marketing</a>
+                            <span class="number" style="margin-left: 20px;">743</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="job-row reveal">
+                <ul class="category">
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Full Time </a>
+                            <span class="number" style="margin-left: 60px;">1700</span>
+                        </div>
+                    </li>
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Permanent</a>
+                            <span class="number" style="margin-left: 45px;">1525</span>
+                        </div>
+                    </li>
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Part Time </a>
+                            <span class="number" style="    margin-left: 60px;">982</span>
+                        </div>
+                    </li>
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Thực Tập
+                            </a>
+                            <span class="number" style="margin-left: 56px;">1272</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="job-row reveal">
+                <ul class="category">
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields">Hợp Đồng
+                            </a>
+                            <span class="number" style="margin-left: 56px;">1589</span>
+                        </div>
+                    </li>
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Casual/Temporary
+                            </a>
+                            <span class="number">1178</span>
+                        </div>
+                    </li>
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Thời Vụ
+                            </a>
+                            <span class="number" style="margin-left: 80px;">1022</span>
+                        </div>
+                    </li>
+                    <li class="category-element">
+                        <div style="display: flex; justify-content: space-between;">
+                            <a href="" class="fields"> Tự Lập
+                            </a>
+                            <span class="number" style="margin-left: 95px;">773</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Recent Jobs -->
+    <section class="job-post bg-color reveal ttt">
+        <div class="job-container">
+            <!-- header -->
+            <div class="job-container-header">
+                <div class="job-header">
+                    <p class="header-Categories">
+                        Công Việc Mới Nhất
+                    </p>
+                    <span class="header-current">
+                        <b class="b-job">Việc Làm</b> Gần Đây
+                    </span>
+                </div>
+            </div>
+            <!-- List job -->
+            <div class="job-list ">
+                <div class="row-recent1 reveal">
+                    <div class="row-recent-container " style="justify-content: space-between;">
+                        <!-- row-item -->
+                        <div class="row-item">
+                            <div class="name-job">
+                                <h2 class="name">DevOps Engineer</h2>
+                                <div class="level">
+                                    <span class="sp-level">Partime</span>
+                                </div>
+
+                            </div>
+
+                            <div class="address-job">
+                                <div class="company">
+                                    <i class="ti-layers-alt"></i>
+                                    <a href="" class="company-name">Enouvo IT Solution</a>
+                                </div>
+
+                                <div class="address">
+                                    <i class="ti-location-pin"></i>
+                                    <span class="name-address"> Quận Sơn Trà, Thành phố Đà Nẵng</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- apply -->
+                        <div class="apply">
+                            <a href="seeDetail.html" class="apply-job">Xem Công Việc</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-recent1 reveal">
+                    <div class="row-recent-container " style="justify-content: space-between;">
+                        <!-- row-item -->
+                        <div class="row-item">
+                            <div class="name-job">
+                                <h2 class="name">Java - Need programmer</h2>
+                                <div class="level">
+                                    <span class="sp-level">Partime</span>
+                                </div>
+
+                            </div>
+
+                            <div class="address-job">
+                                <div class="company">
+                                    <i class="ti-layers-alt"></i>
+                                    <a href="" class="company-name">VKU group
+                                    </a>
+                                </div>
+
+                                <div class="address">
+                                    <i class="ti-location-pin"></i>
+                                    <span class="name-address"> Quận Ngũ Hành Sơn, Thành phố Đà Nẵng</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- apply -->
+                        <div class="apply">
+                            <a href="seeDetail.html" class="apply-job">Xem Công Việc</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-recent1 reveal">
+                    <div class="row-recent-container " style="justify-content: space-between;">
+                        <!-- row-item -->
+                        <div class="row-item">
+                            <div class="name-job">
+                                <h2 class="name">ReactJS Developer</h2>
+                                <div class="level">
+                                    <span class="sp-level">Partime</span>
+                                </div>
+
+                            </div>
+
+                            <div class="address-job">
+                                <div class="company">
+                                    <i class="ti-layers-alt"></i>
+                                    <a href="" class="company-name">Enouvo IT Solution
+                                    </a>
+                                </div>
+
+                                <div class="address">
+                                    <i class="ti-location-pin"></i>
+                                    <span class="name-address"> Quận Sơn Trà, Thành phố Đà Nẵng</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- apply -->
+                        <div class="apply">
+                            <a href="seeDetail.html" class="apply-job">Xem Công Việc</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-recent1 reveal">
+                    <div class="row-recent-container " style="justify-content: space-between;">
+                        <!-- row-item -->
+                        <div class="row-item">
+                            <div class="name-job">
+                                <h2 class="name">UI-UX Designer - Designer</h2>
+                                <div class="level">
+                                    <span class="sp-level">Partime</span>
+                                </div>
+
+                            </div>
+
+                            <div class="address-job">
+                                <div class="company">
+                                    <i class="ti-layers-alt"></i>
+                                    <a href="" class="company-name">TMA Solution
+                                    </a>
+                                </div>
+
+                                <div class="address">
+                                    <i class="ti-location-pin"></i>
+                                    <span class="name-address"> Quận Hải Châu, Thành phố Đà Nẵng
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- apply -->
+                        <div class="apply">
+                            <a href="seeDetail.html" class="apply-job">Xem Công Việc</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Thong ke -->
+    <section class="statistical reveal">
+        <div class="statistical-container">
+            <div class="job-list list-flex-row list-flex-space">
+                <div class="row-element-statis">
+                    <div class="text">
+                        <strong class="number-statis">1,350,285</strong>
+                        <span class="text-statis">
+                            Công việc
+                        </span>
+                    </div>
+                </div>
+                <div class="row-element-statis">
+                    <div class="text">
+                        <strong class="number-statis">1,350,451</strong>
+                        <span class="text-statis">
+                            Ứng viên
+                        </span>
+                    </div>
+                </div>
+                <div class="row-element-statis">
+                    <div class="text">
+                        <strong class="number-statis">792,030</strong>
+                        <span class="text-statis">
+                            Công ty
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- company-->
+    <section class="job-post reveal">
+        <div class="job-container">
+            <div class="job-container-header">
+                <div class="job-header">
+                    <p class="header-Categories">
+                        Hợp tác
+                    </p>
+                    <span class="header-current">
+                        <b class="b-job">Doanh Nghiệp</b> Lớn
+                    </span>
+                </div>
+            </div>
+            <div class="group-slide">
+                <div class="row-slide">
+                    <div class="col-slide">
+                        <div class="image-company">
+                            <img src="./assets/image/Company/partners-01.png" alt="">
+                        </div>
+                        <div class="image-company">
+                            <img src="./assets/image/Company/partners-02.png" alt="">
+                        </div>
+                        <div class="image-company">
+                            <img src="./assets/image/Company/partners-03.png" alt="">
+                        </div>
+                        <div class="image-company">
+                            <img src="./assets/image/Company/partners-04.png" alt="">
+                        </div>
+                        <div class="image-company">
+                            <img src="./assets/image/Company/partners-05.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- recent blog -->
+    <section class="job-post bg-color reveal" id="ttt2">
+        <div class="job-container">
+            <div class="job-container-header">
+                <div class="job-header">
+                    <p class="header-Categories">
+                        Blog Của Chúng Tôi
+                    </p>
+                    <span class="header-current">
+                        <b class="b-job">Blog</b> Mới Nhất
+                    </span>
+                </div>
+            </div>
+            <div class="list-flex-row blog-size">
+                <div class="col-blog">
+                    <div class="img-blog">
+                        <a href="" class="img-blog-link" style="background-image: url(./assets/image/blog/blog1.jpg);">
+                        </a>
+                    </div>
+                    <div class="text-blog">
+                        <div class="time-blog">
+                            <p>DECEMBER 2, 2022 ADMIN <i class="ti-comment-alt"></i> 3</p>
+                        </div>
+                        <h3 class="header-blog">
+                            <a href="BlogDetail.html">Hỗ Trợ Triển Khai Phần Mềm Erp
+                                Công Ty Cổ Phần Tập Đoàn Công Nghệ Absoft</a>
+                        </h3>
+                        <p>
+                            MÔ TẢ CÔNG VIỆC: <br>
+                            - Thiết lập giao diện nhập liệu <br>
+                            - Thiết lập biểu mẫu in <br>
+                            - Thiết lập công thức tính toán <br>
+                            - Thiết lập báo cáo thống kê <br>
+                            - Nhập liệu đối tượng quản lý, danh mục <br>
+                            - Nhập liệu nghiệp vụ công việc <br>
+                            - Xem báo cáo thống kê phân tích.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-blog">
+                    <div class="img-blog">
+                        <a href="" class="img-blog-link" style="background-image: url(./assets/image/blog/blog2.jpg);">
+                        </a>
+                    </div>
+                    <div class="text-blog">
+                        <div class="time-blog">
+                            <p>DECEMBER 2, 2022 ADMIN <i class="ti-comment-alt"></i> 3</p>
+                        </div>
+                        <h3 class="header-blog">
+                            <a href="BlogDetail.html">Nhân Viên SEO, Viết Content Fulltime
+                                Công Ty Cồ Phần Công Nghệ Homeair Toàn Cầu</a>
+                        </h3>
+                        <p>
+                            MÔ TẢ CÔNG VIỆC: <br>
+                            – Xây dựng và quản lý các site vệ tinh. <br>
+                            – Liên tục theo dõi, phân tích và tối ưu hiệu quả SEO. <br>
+                            – Nắm bắt và cập nhật kịp thời các thuật toán của Google. <br>
+                            – Các công việc khác theo sự phân công của Leader.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-blog ">
+                    <div class="img-blog">
+                        <a href="" class="img-blog-link" style="background-image: url(./assets/image/blog/blog3.png);">
+                        </a>
+                    </div>
+                    <div class="text-blog">
+                        <div class="time-blog">
+                            <p>DECEMBER 2, 2022 ADMIN <i class="ti-comment-alt"></i> 3</p>
+                        </div>
+                        <h3 class="header-blog">
+                            <a href="BlogDetail.html">Công Ty TNHH Giải Pháp Công Nghệ Aibb</a>
+                        </h3>
+                        <p style="margin-top: 32px;">
+                            MÔ TẢ CÔNG VIỆC: <br>
+                            - Thiết kế bộ Logo, cover, poster sử dụng cho Social Media <br>
+                            - Thiết kế UI cho web, mobile, icon, sticker, ảnh sử dụng cho web <br>
+                            - Lên wireframe, prototype theo yêu cầu <br>
+                            - Thực hiện các công việc thiết kế đồ hoạ từ người quản lý trực tiếp. <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-blog">
+                    <div class="img-blog">
+                        <a href="" class="img-blog-link" style="background-image: url(./assets/image/blog/blog4.jpg);">
+                        </a>
+                    </div>
+                    <div class="text-blog">
+                        <div class="time-blog">
+                            <p>DECEMBER 2, 2022 ADMIN <i class="ti-comment-alt"></i> 3</p>
+                        </div>
+                        <h3 class="header-blog">
+                            <a href="BlogDetail.html">Lập Trình Viên Mobile App
+                                Công Ty Cổ Phần Tổ Hợp Công Nghệ Ohlaalaa</a>
+                        </h3>
+                        <p>
+                            MÔ TẢ CÔNG VIỆC: <br>
+                            - Tham gia phát triển hệ thống sàn thương mại điện tử <br>
+                            - Sửa lỗi và cải thiện tính năng, hiệu suất sản phẩm . <br>
+                            - Nghiên cứu, tìm hiểu các công nghệ, mới phục vụ các nhu cầu sản phẩm của công
+                            ty. <br>
+                            - Những công việc khác được giao bởi Mentor/ Supervisor/ Manager. <br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Sub -->
+    <section class="subcribe ">
+        <div class="subcribe-background">
+            <div class="subcribe-container">
+                <div class="row-sub">
+                    <div class="col-sub" data-aos="flip-left">
+                        <h2>Theo dõi bản tin của chúng tôi
+                        </h2>
+                        <p>Luôn luôn cập nhật những thông tin mới nhất về công việc , cũng như các công việc liên quan
+                            tới các bạn</p>
+                        <div class="input-mail-sub">
+                            <form action="" class="input">
+                                <div class="form-group">
+                                    <input type="text" class="text-mail" placeholder="Vui Lòng Nhập Email...">
+                                    <input class="button" type="submit" value="Subcribe"></input>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div id="footer">
+        <div class="footer-main">
+            <div class="fta ft1">
+                <div class="mg-ft1">
+                    <p>
+                    <h2>Theo Dõi Website Qua:</h2>
+                    </p>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+
+            </div>
+            <div class="ft ft2">
+                <h2>Dành cho người tìm việc</h2>
+                <ul class="list-ft">
+                    <li>
+                        <a href="NganhNghe.html">
+                            <i class="fa-solid fa-angles-right"></i> Công Việc
+                        </a>
+                    </li>
+                    <li>
+                        <a href="NganhNghe.html">
+                            <i class="fa-solid fa-angles-right"></i> Các ngành Hot
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog.html">
+                            <i class="fa-solid fa-angles-right"></i> Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-solid fa-angles-right"></i> Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft ft3">
+                <h2>Dành cho nhà tuyển dụng</h2>
+                <ul class="list-ft">
+                    <li>
+                        <a href="NganhNghe.html">
+                            <i class="fa-solid fa-angles-right"></i> Công việc
+                        </a>
+                    </li>
+                    <li>
+                        <a href="job/company.html">
+                            <i class="fa-solid fa-angles-right"></i> Đề xuất
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog.html">
+                            <i class="fa-solid fa-angles-right"></i> Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-solid fa-angles-right"></i> Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft ft4">
+                <h2>Chi Tiết Liên Hệ </h2>
+                <ul class="list-ft2">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i> 470 Tran Dai Nghia,
+                        Ngu Hanh Son, Da Nang
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i> +84 3136 8443
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i> minhtc.21it@vku.udn.vn
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-phu">
+            <p>Terms and ConditionsPolicy</p>
+        </div>
+    </div>
+
+    <!-- js -->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slick slide -->
+    <script>
+
+    </script>
+
+    <script type='text/javascript'>
+        var mql = window.matchMedia('screen and (max-width:  987px)');
+        if (mql.matches) {
+            $(document).ready(function () {
+                $('.col-slide').slick({
+                    // autoplay: true, //tự động chuyển slide
+                    // autoplaySpeed: 2000, //sau bao nhiêu giây đó thì chuyển slide
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
+                });
+            });
+        } else {
+            $(document).ready(function () {
+                $('.col-slide').slick({
+                    // autoplay: true, //tự động chuyển slide
+                    // autoplaySpeed: 2000, //sau bao nhiêu giây đó thì chuyển slide
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
+                });
+            });
+        }
+    </script>
+    <!-- animation header -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <!-- rereal web element on scroll -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+    <!--  -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var bgPattern = document.getElementById("bg")
+            window.addEventListener("scroll", function () {
+                bgPattern.style.backgroundPosition = +window.pageXOffset + "px";
+            })
+        })
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navv");
+            if (x.className === "nav-ull") {
+                x.classList.add("dis-none");
+                console.log(x);
+            } else {
+                x.classList.remove("dis-none");
+                console.log(x);
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    AOS.init();
+</script>
+
+</html>

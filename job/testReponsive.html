@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reponsive</title>
+</head>
+<style>
+    body {
+        
+        height: 100vh;
+        background-color: coral;
+        display: flex;
+        /* mobile */
+        
+    }
+    .pc, .tablet, .mobile {
+        margin: auto;
+        color: #fff;
+        display: none;
+        
+    }
+    /* mobile */
+    @media only screen and (max-width: 739px){
+        .mobile {
+                display: block;
+            }
+        }
+        /* tablet */
+    @media only screen and (max-width: 1023px) and (min-width: 740px) {
+        .tablet {
+                display: block;
+            }
+    }
+        /* pc */
+        @media only screen and (min-width: 1024px) {
+            .pc {
+                display: block;
+            }
+        }
+</style>
+<body>
+    <h1 class="pc">PC</h1>
+    <h1 class="tablet">Tablet</h1>
+    <h1 class="mobile">Mobile</h1>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="job.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="pagination.css">
+</head>
+
+<body>
+    <section class="job">
+        <div class="nav__search">
+            <h1 class="title">Search Filter</h1>
+            <hr>
+            <div class="search__box"></div>
+            <div class="province">
+
+                <select name=slist class="slist">
+                    <script language="javascript">
+                        var states = new Array("Chọn Tỉnh thành","An Giang", "Bac Giang", "Bac Kan", "Bac Lieu", "Bac Ninh", "Ba Ria-Vung Tau", "Ben Tre", "Binh Dinh", "Binh Duong", "Binh Phuoc", "Binh Thuan", "Ca Mau", "Cao Bang", "Dac Lak", "Dac Nong", "Dien Bien", "Dong Nai", "Dong Thap", "Gia Lai", "Ha Giang", "Hai Duong", "Ha Nam", "Ha Tay", "Ha Tinh", "Hau Giang", "Hoa Binh", "Hung Yen", "Khanh Hoa", "Kien Giang", "Kon Tum", "Lai Chau", "Lam Dong", "Lang Son", "Lao Cai", "Long An", "Nam Dinh", "Nghe An", "Ninh Binh", "Ninh Thuan", "Phu Tho", "Phu Yen", "Quang Binh", "Quang Nam", "Quang Ngai", "Quang Ninh", "Quang Tri", "Soc Trang", "Son La", "Tay Ninh", "Thai Binh", "Thai Nguyen", "Thanh Hoa", "Thua Thien-Hue", "Tien Giang", "Tra Vinh", "Tuyen Quang", "Vinh Long", "Vinh Phuc", "Yen Bai", "Can Tho", "Da Nang", "Hai Phong", "Hanoi", "Ho Chi Minh");
+                        for (var hi = 0; hi < states.length; hi++)
+                            document.write("<option value=\"" + states[hi] + "\">" + states[hi] + "</option>");
+                    </script>
+                </select>
+
+            </div>
+            <div class="category">
+                
+                <select name=slist class="slist">
+                    <script language="javascript">
+                        var states = new Array("Vị trí","Programer", "Edittor", "Web Developer", "Designer");
+                        for (var hi = 0; hi < states.length; hi++)
+                            document.write("<option value=\"" + states[hi] + "\">" + states[hi] + "</option>");
+                    </script>
+                </select>
+                
+            </div>
+            <div class="search">
+                <select name=slist class="slist">
+                    <script language="javascript">
+                        var states = new Array("Tìm kiếm theo", "Mới nhất","Mức lương", "Xếp hạng");
+                        for (var hi = 0; hi < states.length; hi++)
+                            document.write("<option value=\"" + states[hi] + "\">" + states[hi] + "</option>");
+                    </script>
+                </select>
+            </div>
+            <button class="btn__search see">Search</button> 
+
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="left">
+                    <img src="https://enouvo.com/wp-content/uploads/2020/07/9.1.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="infor">
+                        <h1 class="title__infor">VKU Group</h1>
+                        <p class="title__sub">Java - Need programmer</p>
+                        <i class='bx bxs-user'></i> Programer
+                        <ul class="icon__star">
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+
+                        </ul>
+                        <p style="margin: 5px 0;">(5)</p>
+                        <div class="cnt">
+                            <i class='bx bx-current-location'></i> <p>  Nguyen Minh Chau, Phường Hoà Quý, Quận Ngũ Hành Sơn, Thành phố Đà Nẵng</p>
+                        </div>
+                        
+                    </div>
+                    <div class="deal">
+                        <div class="cnt">
+                            <i class='bx bx-alarm'></i> <p>  Hết hạn 21-5-2022</p> <br>
+                        </div>
+                        <div class="cnt">
+                            <i class='bx bx-dollar-circle'></i> <p>  12-16 triệu VND</p> <br>
+                        </div>
+                        
+                        <button class="see">Xem thêm</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="left">
+                    <img src="https://enouvo.com/wp-content/uploads/2020/07/9.1.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="infor">
+                        <h1 class="title__infor">VKU Group</h1>
+                        <p class="title__sub">Java - Need programmer</p>
+                        <i class='bx bxs-user'></i> Programer
+                        <ul class="icon__star">
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+
+                        </ul>
+                        <p style="margin: 5px 0;">(5)</p>
+                        <div class="cnt">
+                            <i class='bx bx-current-location'></i> <p>  Nguyen Minh Chau, Phường Hoà Quý, Quận Ngũ Hành Sơn, Thành phố Đà Nẵng</p>
+                        </div>
+                        
+                    </div>
+                    <div class="deal">
+                        <div class="cnt">
+                            <i class='bx bx-alarm'></i> <p>  Hết hạn 21-5-2022</p> <br>
+                        </div>
+                        <div class="cnt">
+                            <i class='bx bx-dollar-circle'></i> <p>  12-16 triệu VND</p> <br>
+                        </div>
+                        
+                        <button class="see">Xem thêm</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="left">
+                    <img src="https://enouvo.com/wp-content/uploads/2020/07/9.1.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="infor">
+                        <h1 class="title__infor">VKU Group</h1>
+                        <p class="title__sub">Java - Need programmer</p>
+                        <i class='bx bxs-user'></i> Programer
+                        <ul class="icon__star">
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+
+                        </ul>
+                        <p style="margin: 5px 0;">(5)</p>
+                        <div class="cnt">
+                            <i class='bx bx-current-location'></i> <p>  Nguyen Minh Chau, Phường Hoà Quý, Quận Ngũ Hành Sơn, Thành phố Đà Nẵng</p>
+                        </div>
+                        
+                    </div>
+                    <div class="deal">
+                        <div class="cnt">
+                            <i class='bx bx-alarm'></i> <p>  Hết hạn 21-5-2022</p> <br>
+                        </div>
+                        <div class="cnt">
+                            <i class='bx bx-dollar-circle'></i> <p>  12-16 triệu VND</p> <br>
+                        </div>
+                        
+                        <button class="see">Xem thêm</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="left">
+                    <img src="https://enouvo.com/wp-content/uploads/2020/07/9.1.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="infor">
+                        <h1 class="title__infor">VKU Group</h1>
+                        <p class="title__sub">Java - Need programmer</p>
+                        <i class='bx bxs-user'></i> Programer
+                        <ul class="icon__star">
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+                            <li><i class='bx bxs-star'></i></li>
+
+                        </ul>
+                        <p style="margin: 5px 0;">(5)</p>
+                        <div class="cnt">
+                            <i class='bx bx-current-location'></i> <p>  Nguyen Minh Chau, Phường Hoà Quý, Quận Ngũ Hành Sơn, Thành phố Đà Nẵng</p>
+                        </div>
+                        
+                    </div>
+                    <div class="deal">
+                        <div class="cnt">
+                            <i class='bx bx-alarm'></i> <p>  Hết hạn 21-5-2022</p> <br>
+                        </div>
+                        <div class="cnt">
+                            <i class='bx bx-dollar-circle'></i> <p>  12-16 triệu VND</p> <br>
+                        </div>
+                        
+                        <button class="see">Xem thêm</button>
+                    </div>
+                </div>
+            </div>
+            
+              
+              
+              
+              
+              
+              <div class="pagination__end">
+
+                  <div class="pagination">
+                      <a href="#">&laquo;</a>
+                      <a href="#" class="active">1</a>
+                      <a href="#">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#">5</a>
+                      <a href="#">6</a>
+                      <a href="#">&raquo;</a>
+                  </div>
+              </div>
+        </div>
+       
+    </section>
+</body>
+<!-- select province -->
+
+</html>

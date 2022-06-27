@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #e0e0e0;
+}
+.job {
+    width: calc(100%-30px);
+    height: auto;
+    margin: 30px;
+    
+    
+}
+.nav__search{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    float: left;
+    height: auto;
+    width: 300px;
+    text-align: center;
+}
+.content {
+    background-color: #e0e0e0;
+    float: right;
+   width: calc(100% - 300px - 30px);
+    height: 100vh;
+    
+}
+.slist {
+    outline: #20c0f3;
+    border: 1px solid#20c0f3;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+.btn__search {
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 30px;
+}
+hr {
+    margin: 10px 0;
+}
+.title {
+    margin-top: 10px;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: 240px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.card .left {
+    float: left;
+    width: 250px;
+    height: 200px;
+    
+}
+.card .left img {
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+   
+}
+.card .right {
+    float: right;
+    width: 70%;
+}
+.right .infor {
+    float: left;
+    width: 70%;
+    font-size: 17px;
+}
+.right .deal {
+    float: right;
+    width: 30%;
+}
+.icon__star {
+    margin: 10px 0;
+}
+.icon__star li {
+    list-style-type: none;
+    display: inline;
+    color: yellow;
+    
+}
+i {
+    font-size: 18px ;
+    padding-right: 5px ;
+}
+.see {
+    padding: 10px;
+    width: 180px;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #20c0f3;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #20c0f3;
+    cursor: pointer;
+    transform: 0.5s;
+}
+.see:hover {
+    background-color: #20c0f3;
+    color: #fff;
+}
+.cnt {
+    display: flex;
+    margin: 5px 0;
+}
+.pagination__end{
+    text-align: center;
+    
+}
+.pagination {
+    display: inline-block;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+  }
+  .pagination a:hover {
+      background-color: #20c0f3;
+      color: #fff;
+  }
+  .pagination .active {
+    background-color: #20c0f3;
+    color: #fff;
+  }

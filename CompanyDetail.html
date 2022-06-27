@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-6.1.1-web/css/all.css">
+    <title>FindJob</title>
+    <link rel="stylesheet" href="./assets/css/styleDetail.css">
+    <link rel="stylesheet" href="./assets/css/font/themify-icons/themify-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" type="image/png " href="https://timviec.com.vn/favicon.png">
+</head>
+
+<body>
+    <!-- animate__animated animate__heartBeat -->
+    <nav class="header animate__animated animate__bounce">
+        <div class="container-nav">
+
+            <div class="nav-element">
+                <a href="index.html" class="nav-home ">FindJob</a>
+                <ul class="nav-ull" id="navv">
+                    <li class="nav-item"><a href="./index.html" class="nav-link"><b>Trang Chủ</b></a></li>
+                    <li class="nav-item"><a href="job/company.html" class="nav-link">Công ty</a></li>
+                    <li class="nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Liên Hệ</a></li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-secondary" style="height: 100%;width: 100%;">
+                            <a href="job/mycv.html" class="btn-nav">Tạo CV</a>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" style="height: 100%;width: 100%;">
+                            <a href="login.html" class="btn-nav">Nhà Tuyển Dụng</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success" style="height: 100%;width: 100%;">
+                            <a href="NganhNghe.html" class="btn-nav">Tìm Công Việc</a>
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </nav>
+    <!-- find -->
+    <section class="job-post">
+        <div class="job-container">
+            <div class="bg-find">
+                <form action="" class="form-search">
+                    <span class="fa fa-search"></span>
+                    <span class="fa fa-bank"></span>
+                    <input type="text" class="search" placeholder="Tên Công ty, từ khóa...">
+                    <input type="text" class="search s-address" placeholder="Địa chỉ">
+                    <button><a href="job/company.html" class="btn-search">Search</a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- job -->
+    <section class="job-post">
+        <div class="job-container">
+
+            <div class="docc">
+                <div class="doc-left">
+                    <div class="image-job">
+                        <img src="./assets/image/Company/enouvo.png" alt="">
+                    </div>
+                    <div class="doc-cont">
+                        <h3 class="doc-department mg-10">
+                            ENOUVO
+                        </h3>
+                        <a href=" " class="name-company mg-10">MAKE A DIFFERENCE</a>
+                        <p class="address-job">
+                            Địa Điểm Làm Việc: Đà Nẵng
+                        </p>
+                        <p class="salary mg-10">Chủ Yếu Tuyển Dụng: CNTT</p>
+                        <p class="deadline">Luôn Mở Cửa 24/7</p>
+                    </div>
+                </div>
+
+                <div class="doc-right" style="display: none;">
+                    <div class="apply">
+                        <a href="./login.html" class="apply-job">Apply Job</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="job-container mg-top-15">
+            <div class="content-body">
+                <div class="docc-no-flex">
+                    <nav class="info">
+                        <ul class="ul-info">
+                            <li class="nav-item-info nav-active">
+                                <a href="#" class="link-item">Thông tin</a>
+                            </li>
+                            <li class="nav-item-info">
+                                <a href="#" class="link-item">Ngành Tuyển Dụng Và Công Nghệ Sử Dụng</a>
+                            </li>
+                            <li class="nav-item-info">
+                                <a href="#" class="link-item">Phúc Lợi</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <div class="tab-content active" id="doc-thong-tin">
+                        <div class="item-tab">
+                            <h4 class="header-detail">
+                                Giới Thiệu Về Công Ty
+                            </h4>
+                            <p class="main-detail">
+                                - Chúng tôi bắt đầu với tư cách là một vài người bạn có chung sở thích phát triển trang
+                                web và ứng dụng tuyệt vời. Chúng tôi đã phát triển để trở thành một studio nhỏ gồm các
+                                nhà thiết kế, nhà phát triển và nhà tiếp thị, đặc biệt là nhóm bạn lớn hơn. Chúng tôi
+                                tin rằng niềm vui tại nơi làm việc của chúng tôi sẽ làm tăng giá trị công việc và tăng
+                                năng suất của chúng tôi. <br> <br>
+
+                                - Chúng tôi tin rằng kỹ thuật số là con đường phía trước và mọi thứ sẽ được số hóa.
+                                Chúng
+                                tôi đam mê công việc của mình, mục đích của chúng tôi là tạo ra các giải pháp hữu ích và
+                                có mục đích giúp nâng cao chất lượng cuộc sống. <br> <br>
+
+                                - Chúng tôi muốn có một nơi làm việc thoải mái và thư giãn, nơi mọi người có thể tìm
+                                thấy
+                                sự sáng tạo và động lực để làm việc hết mình. Chúng tôi đang nỗ lực xây dựng nơi đó và
+                                phát triển đội ngũ của mình để lấp đầy nơi này với tất cả các nhà phát triển tài năng và
+                                nhiệt huyết.
+                            </p>
+                        </div>
+                        <div class="item-tab">
+                            <h4 class="header-detail">
+                                Chuyên Môn Của Công Ty
+                            </h4>
+                            <p class="main-detail">
+                                - Chúng tôi làm việc với hầu hết các công nghệ tiên tiến nhất. Dưới đây là một số nền
+                                tảng
+                                / khuôn khổ chính của chúng tôi: <br>
+                                Máy chủ: - Node.JS- Microsoft .NET- ParseWeb: - React-
+                                Angular 1 + 2- RendrMobile: - React native- Appcelerator Titanium- Objective C / Swift-
+                                JavaDatabase: - Parse- Mongo- Raven- SQL Server
+                            </p>
+                        </div>
+                        <div class="item-tab">
+                            <h4 class="header-detail">
+                                Địa Chỉ Và Thông Tin Liên Hệ
+                            </h4>
+                            <p class="main-detail">
+                                - Địa Chỉ: 16-18 An Nhơn 3, Thành phố Đà Nẵng, Việt Nam <br>
+                                - Telephone: (+84) 901 131 212 <br>
+                                - Gmail: Career@enouvo.com info@enouvo.com
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="doc-cong-ty">
+                        <div class="item-tab">
+                            <h4 class="header-detail">
+                                Công Nghệ:
+                            </h4>
+                            <p class="main-detail">
+                                - React <br>
+                                - React Native <br>
+                                - Php <br>
+                                - Android <br>
+                                - JNET <br>
+                                - Laravel <br>
+                                - Flutter. <br>
+                                -... và một số công nghệ đang phát triển khác
+                            </p>
+                        </div>
+                        <div class="item-tab">
+                            <h4 class="header-detail">
+                                Các Công Việc Đang Tuyển Dụng:
+                            </h4>
+                            <p class="main-detail">
+                                <a href="" class="axtt2"> <i class="fa-solid fa-angles-right"></i> Frontend : 4 Vị
+                                    trí</a> <br>
+                                <a href="" class="axtt2"> <i class="fa-solid fa-angles-right"></i> Backend : 2 Vị
+                                    trí</a> <br>
+                                <a href="" class="axtt2"> <i class="fa-solid fa-angles-right"></i> Mobile : 7 Vị trí</a>
+                                <br>
+                                <a href="" class="axtt2"> <i class="fa-solid fa-angles-right"></i> Tech Lead & PM : 3 Vị
+                                    trí</a> <br>
+                                <a href="" class="axtt2"> <i class="fa-solid fa-angles-right"></i> Marketing : 7 Vị
+                                    trí</a> <br>
+                                <a href="" class="axtt2"> <i class="fa-solid fa-angles-right"></i> Scrum Master : 3 Vị
+                                    trí</a> <br>
+                                <a href="" class="axtt2"> <i class="fa-solid fa-angles-right"></i> BA & Product Owners :
+                                    6 Vị trí</a> <br>
+                                <a href="" class="axtt2"> <i class="fa-solid fa-angles-right"></i> Quality Assurance : 8
+                                    Vị trí</a> <br>
+                                <a href="" class="axtt2"> <i class="fa-solid fa-angles-right"></i> Back Office : 2 Vị
+                                    trí</a> <br>
+                                <a href="" class="axtt2"> <i class="fa-solid fa-angles-right"></i> DevOps : 4 Vị trí</a>
+                                <br>
+
+
+                            </p>
+                        </div>
+                        <div class="item-tab" style="display: none;">
+                            <h4 class="header-detail">
+                                Địa điểm
+                            </h4>
+                            <p class="main-detail">
+                                Trụ sở chính: Số 5 Phạm Hùng, Mỹ Đình 2, Nam Từ Liêm, TP. Hà Nội <br>
+                                ĐT: 024.37689346, Fax: 024. 37689433 <br>
+                                E-mail: vanphong@vnpost.vn <br>
+                                Website: www.vnpost.vn <br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="doc-viec-lam">
+                        <h4 class="header-detail">
+                            CÁC PHÚC LỢI DÀNH CHO BẠN
+                        </h4>
+                        <p class="main-detail">
+                            - Được tham gia các khóa đào tạo theo lĩnh vực chuyên môn của Tổng công ty ở trong nước
+                            và nước ngoài.
+                            <br>
+                            - Du Lịch, Chăm sóc sức khỏe, Bảo hiểm BHXH, BHYT đầy đủ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div id="footer">
+        <div class="footer-main">
+            <div class="fta ft1">
+                <div class="mg-ft1">
+                    <p>
+                    <h2>Theo Dõi Website Qua:</h2>
+                    </p>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+
+            </div>
+            <div class="ft ft2">
+                <h2>Dành cho người tìm việc</h2>
+                <ul class="list-ft">
+                    <li>
+                        <a href="NganhNghe.html">
+                            <i class="fa-solid fa-angles-right"></i> Công Việc
+                        </a>
+                    </li>
+                    <li>
+                        <a href="NganhNghe.html">
+                            <i class="fa-solid fa-angles-right"></i> Các ngành Hot
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog.html">
+                            <i class="fa-solid fa-angles-right"></i> Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-solid fa-angles-right"></i> Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft ft3">
+                <h2>Dành cho nhà tuyển dụng</h2>
+                <ul class="list-ft">
+                    <li>
+                        <a href="NganhNghe.html">
+                            <i class="fa-solid fa-angles-right"></i> Công việc
+                        </a>
+                    </li>
+                    <li>
+                        <a href="job/company.html">
+                            <i class="fa-solid fa-angles-right"></i> Đề xuất
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog.html">
+                            <i class="fa-solid fa-angles-right"></i> Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-solid fa-angles-right"></i> Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft ft4">
+                <h2>Chi Tiết Liên Hệ </h2>
+                <ul class="list-ft2">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i> 470 Tran Dai Nghia,
+                        Ngu Hanh Son, Da Nang
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i> +84 3136 8443
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i> minhtc.21it@vku.udn.vn
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-phu">
+            <p>Terms and ConditionsPolicy</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./changeTab.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navv");
+            if (x.className === "nav-ull") {
+                x.classList.add("dis-none");
+                console.log(x);
+            } else {
+                x.classList.remove("dis-none");
+                console.log(x);
+            }
+        }
+    </script>
+</body>
+
+</html>

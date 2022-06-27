@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindJob</title>
+    <link rel="stylesheet" href="company.css">
+    <!-- <link rel="stylesheet" href="/assets/css/styleLogin.css">
+    <link rel="stylesheet" href="/assets/css/styleTest.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/styleTest.css">
+    <link rel="stylesheet" href="./assets/css/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome-free-6.1.1-web/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" type="image/png " href="https://timviec.com.vn/favicon.png">
+
+</head>
+
+<body>
+    <!-- Nav -->
+    <!-- animate__animated animate__heartBeat -->
+    <nav class="header animate__animated animate__bounce" style="padding: 10px 16px;">
+        <div class="container-nav">
+
+            <div class="nav-element">
+                <a href="../index.html" class="nav-home  ">FindJob</a>
+                <ul class="nav-ull" id="navv">
+                    <li class="nav-item"><a href="../index.html" class="nav-link"><b>Trang Chủ</b></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Công ty</a></li>
+                    <li class="nav-item"><a href="../blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="../about.html" class="nav-link">Liên Hệ</a></li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-secondary" style="height: 100%;width: 100%;">
+                            <a href="mycv.html" class="btn-nav">Tạo CV</a>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" style="height: 100%;width: 100%;">
+                            <a href="../login.html" class="btn-nav">Nhà Tuyển Dụng</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success" style="height: 100%;width: 100%;">
+                            <a href="../NganhNghe.html" class="btn-nav">Tìm Công Việc</a>
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </nav>
+    <!-- find -->
+    <div>
+        <div class="hello3">
+            <div class="search-job vv">
+                <div class="hello5">
+                    <input type="text" class="form-control hello4" placeholder="Tên công ty,từ khóa,...">
+                    <span class="fa fa-search"></span>
+                </div>
+            </div>
+            <!-- <div class="selectdiv vv ">
+                <label>
+                    <select>
+                        <option selected> Chọn Ngành Nghề...</option>
+                        <option>Tất cả các ngành</option>
+                        <option>Công nghệ thông tin</option>
+                        <option>Tài chính kinh doanh</option>
+                        <option>Cơ Khí - Kỹ thuật ứng dụng</option>
+                        <option>Du lịch - Nhà hàng - khách sạn</option>
+                        <option>Giáo dục - Văn hóa</option>
+                    </select>
+                </label>
+            </div> -->
+            <div class="selectdivvv vv">
+                <select name=slist class="slist">
+                    <script language="javascript">
+                        var states = new Array("Chọn Tỉnh thành...", "An Giang", "Bac Giang", "Bac Kan", "Bac Lieu", "Bac Ninh", "Ba Ria-Vung Tau", "Ben Tre", "Binh Dinh", "Binh Duong", "Binh Phuoc", "Binh Thuan", "Ca Mau", "Cao Bang", "Dac Lak", "Dac Nong", "Dien Bien", "Dong Nai", "Dong Thap", "Gia Lai", "Ha Giang", "Hai Duong", "Ha Nam", "Ha Tay", "Ha Tinh", "Hau Giang", "Hoa Binh", "Hung Yen", "Khanh Hoa", "Kien Giang", "Kon Tum", "Lai Chau", "Lam Dong", "Lang Son", "Lao Cai", "Long An", "Nam Dinh", "Nghe An", "Ninh Binh", "Ninh Thuan", "Phu Tho", "Phu Yen", "Quang Binh", "Quang Nam", "Quang Ngai", "Quang Ninh", "Quang Tri", "Soc Trang", "Son La", "Tay Ninh", "Thai Binh", "Thai Nguyen", "Thanh Hoa", "Thua Thien-Hue", "Tien Giang", "Tra Vinh", "Tuyen Quang", "Vinh Long", "Vinh Phuc", "Yen Bai", "Can Tho", "Da Nang", "Hai Phong", "Hanoi", "Ho Chi Minh");
+                        for (var hi = 0; hi < states.length; hi++)
+                            document.write("<option value=\"" + states[hi] + "\">" + states[hi] + "</option>");
+                    </script>
+                </select>
+            </div>
+            <div class="hello7">
+                <button type="button" class="btn btn-info hello6">
+                    <a href="" class="btn-nav">Tìm Kiếm</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #e0e0e0;">
+        <div class="hello8">
+            <div class="hl9">
+                <i class="fa-brands fa-hotjar" style="font-size: 30px; color: red;margin-right: 10px;"></i>
+            </div>
+            <h3>Các Công Ty Có Lượt Tìm Kiếm Nhiều Nhất</h3>
+        </div>
+        <div class="body">
+            <div id="card">
+                <div class="avatar">
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                </div>
+                <div class="content">
+                    <h1>ENOUVO</h1>
+                    <p>Fullstack Developer</p>
+                    <ul class="icon__star">
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+
+                    </ul>
+                    <p>(5)</p>
+                    <div class="">
+                        <p class="describe">ENOUVO là NHÓM CÁC NHÀ ĐỔI MỚI mong muốn nâng cao chất lượng cuộc sống bằng
+                            Công
+                            nghệ và Đổi mới liên tục. Chúng tôi cung cấp giải pháp hoàn chỉnh trong Thiết kế & Phát
+                            triển
+                            Sản phẩm Công nghệ để giúp thương hiệu của bạn mang lại lợi thế cạnh tranh trên thị trường.
+                        </p>
+                    </div>
+                    <button><a href="/CompanyDetail.html" class="axttt">Xem thêm</a></button>
+                </div>
+            </div>
+            <div id="card">
+                <div class="avatar">
+                    <img src="fef478c7dd5a9b526fa99e7797517085.png" alt="">
+                </div>
+                <div class="content">
+                    <h1>KIM TÍN</h1>
+                    <p>Nhân Viên và Kế Toán Quản Trị</p>
+                    <ul class="icon__star">
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+
+                    </ul>
+                    <p>(5)</p>
+                    <div class="">
+                        <p class="describe">Trải qua hơn 22 năm hình thành và phát triển, Kim Tín đã vươn lên trở thành
+                            đơn
+                            vị dẫn đầu trong ngành sản xuất và kinh doanh vật liệu hàn. Trở thành Tập đoàn kinh doanh đa
+                            ngành nghề như vật liệu hàn, kim loại màu, ván MDF, sản
+                            phẩm sau MDF, khai thác khoáng sản, vận tải...</p>
+                    </div>
+                    <button><a href="/CompanyDetail.html" class="axttt">Xem thêm</a></button>
+                </div>
+            </div>
+            <div id="card">
+                <div class="avatar">
+                    <img src="514bbe803013776598ec4a8812958d6b.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1>SGS Vietnam </h1>
+                    <p>Report checher and Logistics</p>
+                    <ul class="icon__star">
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+
+                    </ul>
+                    <p>(5)</p>
+                    <div class="">
+                        <p class="describe">Công ty đã được chứng nhận cho tất cả các lĩnh vực hoạt động,cho
+                            các hoạt động giám định,cho các dịch vụ thử nghiệm và được phép
+                            giám định các hàng hóa xuất nhập khẩu phục vụ quản lý Nhà nước theo chấp thuận của Bộ Khoa
+                            học
+                            và Công nghệ, Tổng Cục Hải Quan.</p>
+                    </div>
+                    <button><a href="/CompanyDetail.html" class="axttt">Xem thêm</a></button>
+                </div>
+            </div>
+            <div id="card">
+                <div class="avatar">
+                    <img src="Taptapmainlogo-03-ZkSBy.png" alt="">
+                </div>
+                <div class="content">
+                    <h1>TapTap</h1>
+                    <p>Technical Architect (Node.js, Java)</p>
+                    <ul class="icon__star">
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+                        <li><i class='bx bxs-star'></i></li>
+
+                    </ul>
+                    <p>(5)</p>
+                    <div class="">
+                        <p class="describe">Công ty sẽ đem đến một môi trường làm việc hợp tác và tôn trọng sự đa dạng,
+                            cân
+                            bằng giữa cuộc sống và công việc, và một văn hóa doanh nghiệp dựa trên sự công bằng. Bạn sẽ
+                            có
+                            nhiều trải nghiệm thực tế khi cộng tác cùng TapTap, và công ty cũng sẽ luôn tạo điều kiện
+                            cho
+                            bạn.</p>
+                    </div>
+                    <button><a href="/CompanyDetail.html" class="axttt">Xem thêm</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+
+        <div id="card">
+            <div class="avatar">
+                <img src="TopDev-2754793186869206659235404190480069552798521n-AdminBeetech-1650245368.png" alt="">
+            </div>
+            <div class="content">
+                <h1>BEETECH
+                </h1>
+                <p>Beetech - Make Things Easier</p>
+                <ul class="icon__star">
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+
+                </ul>
+                <p>(5)</p>
+                <div class="">
+                    <p class="describe">Chúng tôi luôn sẵn sàng cung cấp các giải pháp hiệu quả nhất.
+                        Với đội ngũ Digital sáng tạo và Developer nhiều kinh nghiệm, chúng tôi luôn tự tin tạo ra những
+                        sản phẩm hoàn hảo giúp doanh nghiệp của bạn đạt hiệu quả tối đa. Với phương châm "MAKE THINGS
+                        EASIER".</p>
+                </div>
+                <button><a href="/CompanyDetail.html" class="axttt">Xem thêm</a></button>
+            </div>
+        </div>
+        <div id="card">
+            <div class="avatar">
+                <img src="TopDev-NAVER-LOGO-1653556625.png" alt="">
+            </div>
+            <div class="content">
+                <h1>NAVER VN</h1>
+                <p>Senior C/C++Engineer Windows App</p>
+                <ul class="icon__star">
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+
+                </ul>
+                <p>(5)</p>
+                <div class="">
+                    <p class="describe">NG TY TNHH NAVER VIỆT NAM được thành lập tại Việt Nam và trạng thái hiện tại của
+                        nó là Đang hoạt động. Địa chỉ
+                        văn phòng đăng ký của công ty là Tầng 2, Tòa Nhà Lancaster, Số 22-22Bis Lê Thánh Tôn, Phường Bến
+                        Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam.</p>
+                </div>
+                <button><a href="/CompanyDetail.html" class="axttt">Xem thêm</a></button>
+            </div>
+        </div>
+        <div id="card">
+            <div class="avatar">
+                <img src="TopDev-ITDGROUP-1649914859.png" alt="">
+            </div>
+            <div class="content">
+                <h1>iTD Group</h1>
+                <p>Front-end Developer</p>
+                <ul class="icon__star">
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+
+                </ul>
+                <p>(5)</p>
+                <div class="">
+                    <p class="describe">Tập đoàn ITD, tiền thân là Trung tâm CATIC, được thành lập năm 1994 bởi một nhóm
+                        nhà khoa học trẻ với hoài bão hiện đại hóa quê
+                        hương Việt Nam. Trong suốt quá trình hoạt động, đi đầu trong việc
+                        nắm bắt, cung cấp thiết bị hiện đại, dịch vụ kỹ thuật cao.</p>
+                </div>
+                <button><a href="/CompanyDetail.html" class="axttt">Xem thêm</a></button>
+            </div>
+        </div>
+        <div id="card">
+            <div class="avatar">
+                <img src="logoBkc00FCZekNfgGcajsbCXHKp4P3NrMtC-zTqQ0.png" alt="">
+            </div>
+            <div class="content">
+                <h1>TDT Asia</h1>
+                <p>Java Developer</p>
+                <ul class="icon__star">
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+                    <li><i class='bx bxs-star'></i></li>
+
+                </ul>
+                <p>(5)</p>
+                <div class="">
+                    <p class="describe">
+                        Sự thành lập của TDT Asia với tư cách là một công ty dựa trên sản phẩm CNTT với tầm nhìn cung
+                        cấp
+                        phần mềm và hệ thống thông tin tài chính sáng tạo cho thị trường Châu Á nói riêng và thị trường
+                        toàn cầu nói chung công ty duy nhất tại Việt Nam chuyên cung cấp các dịch vụ tài
+                        chính.</p>
+                </div>
+                <button><a href="/CompanyDetail.html" class="axttt">Xem thêm</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="footer-main">
+            <div class="fta ft1">
+                <div class="mg-ft1">
+                    <p>
+                    <h2>Theo Dõi Website Qua:</h2>
+                    </p>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+
+            </div>
+            <div class="ft ft2">
+                <h2>Dành cho người tìm việc</h2>
+                <ul class="list-ft">
+                    <li>
+                        <a href="../NganhNghe.html">
+                            <i class="fa-solid fa-angles-right"></i> Công Việc
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../NganhNghe.html">
+                            <i class="fa-solid fa-angles-right"></i> Các ngành Hot
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../blog.html">
+                            <i class="fa-solid fa-angles-right"></i> Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../about.html">
+                            <i class="fa-solid fa-angles-right"></i> Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft ft3">
+                <h2>Dành cho nhà tuyển dụng</h2>
+                <ul class="list-ft">
+                    <li>
+                        <a href="../NganhNghe.html">
+                            <i class="fa-solid fa-angles-right"></i> Công việc
+                        </a>
+                    </li>
+                    <li>
+                        <a href="job/company.html">
+                            <i class="fa-solid fa-angles-right"></i> Đề xuất
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../blog.html">
+                            <i class="fa-solid fa-angles-right"></i> Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../about.html">
+                            <i class="fa-solid fa-angles-right"></i> Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft ft4">
+                <h2>Chi Tiết Liên Hệ </h2>
+                <ul class="list-ft2">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i> 470 Tran Dai Nghia,
+                        Ngu Hanh Son, Da Nang
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i> +84 3136 8443
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i> minhtc.21it@vku.udn.vn
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-phu">
+            <p>Terms and ConditionsPolicy</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slick slide -->
+    <script>
+
+    </script>
+
+    <script type='text/javascript'>
+        var mql = window.matchMedia('screen and (max-width:  987px)');
+        if (mql.matches) {
+            $(document).ready(function () {
+                $('.col-slide').slick({
+                    // autoplay: true, //tự động chuyển slide
+                    // autoplaySpeed: 2000, //sau bao nhiêu giây đó thì chuyển slide
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
+                });
+            });
+        } else {
+            $(document).ready(function () {
+                $('.col-slide').slick({
+                    // autoplay: true, //tự động chuyển slide
+                    // autoplaySpeed: 2000, //sau bao nhiêu giây đó thì chuyển slide
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
+                });
+            });
+        }
+    </script>
+    <!-- animation header -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <!-- rereal web element on scroll -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+    <!--  -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var bgPattern = document.getElementById("bg")
+            window.addEventListener("scroll", function () {
+                bgPattern.style.backgroundPosition = +window.pageXOffset + "px";
+            })
+        })
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navv");
+            if (x.className === "nav-ull") {
+                x.classList.add("dis-none");
+                console.log(x);
+            } else {
+                x.classList.remove("dis-none");
+                console.log(x);
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

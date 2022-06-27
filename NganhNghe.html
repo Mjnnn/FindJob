@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/NganhNgheCss.css">
+    <!-- <link rel="stylesheet" href="assets/css/styleTest.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/styleTest.css"> -->
+    <link rel="stylesheet" href="assets/css/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="assets/css/themify-icons/themify-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" type="image/png " href="https://timviec.com.vn/favicon.png">
+    <title>FindJob</title>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nav-nav-element a').hover(function () {
+                $('.n1').removeClass("n1");
+            });
+            // $('.nav-nav-element .nvv').hover(function () {
+            //     $('.home').addClass("n1");
+            // });
+            $('.cn-ft').hover(function () {
+                $('.home').addClass("n1");
+            });
+            $('.home').hover(function () {
+                $('.home').addClass("n1");
+            });
+            $('.nav-home').hover(function () {
+                $('.home').addClass("n1");
+            });
+            $('.nav-nav-element2 ').hover(function () {
+                $('.home').addClass("n1");
+            });
+
+
+        });
+    </script>
+    <!-- animation header -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</head>
+
+<body>
+    <!-------------------------- HEADER   ------------------------------>
+    <!-- Nav -->
+    <!-- animate__animated animate__heartBeat -->
+    <nav class="header animate__animated animate__bounce">
+        <div class="container-nav">
+
+            <div class="nav-element">
+                <a href="index.html" class="nav-home   ">FindJob</a>
+                <ul class="nav-ull" id="navv">
+                    <li class="nav-item "><a href="./index.html" class="nav-link"><b>Trang Chủ</b></a></li>
+                    <li class="nav-item "><a href="./job/company.html" class="nav-link">Công ty</a></li>
+                    <li class="nav-item "><a href="./blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item "><a href="about.html" class="nav-link">Liên
+                            Hệ</a></li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-secondary" style="height: 100%;">
+                            <a href="job/mycv.html" class="btn-nav">Tạo CV</a>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" style="height: 100%;">
+                            <a href="login.html" class="btn-nav">Nhà Tuyển Dụng</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success" style="height: 100%;">
+                            <a href="NganhNghe.html" class="btn-nav">Tìm Công Việc</a>
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </nav>
+
+    <!------------------------------- CONTENT AND FOOTER------------------------------->
+    <div class="cn-ft" style="margin-top: 85px;width: 100%;">
+        <div>
+            <div class="ah12"
+                style="display: flex;justify-content: center;width: 90%;margin: 120px auto 40px auto; padding: 50px 50px;border-radius: 100px;box-shadow:  0 0 10px  rgba(0, 0, 0, 0.3);">
+                <div class="search-job vv">
+                    <input type="text" class="form-control" placeholder="Tên việc,công ty, từ khóa,..." style="padding-left: 45px;width: 300px;margin-top: 8px;
+                        height: 45px;">
+                    <span class="fa fa-search"></span>
+                </div>
+                <div class="selectdiv vv ">
+                    <select name=slist class="slist">
+                        <script language="javascript">
+                            var states = new Array("Chọn ngành nghề...", "Tất cả các ngành", "Công nghệ thông tin", "Tài chính kinh doanh", "Cơ Khí - Kỹ thuật ứng dụng", "Du lịch - Nhà hàng - khách sạn", "Giáo dục - Văn hóa", "Điện tử viễn thông", "Hàng không", "Hàng hải", "Marketing-Truyền Thông", "Môi trường-Xử lí chất thải", "Nhân sự - Tài chính", "Logistics", "Công nghệ ôtô", "Xuất nhập khẩu", "Kiến trúc", "Trợ lý - Thư kí", "Bất động sản", "Chứng khoáng", "Dầu khí-Hóa chất", "Khách Sạn - Nhà Hàng", "Quản lí điều hành", "Thiết kế đồ họa", "Thời trang", "Các Ngành Nghề Khác...");
+                            for (var hi = 0; hi < states.length; hi++)
+                                document.write("<option value=\"" + states[hi] + "\">" + states[hi] + "</option>");
+                        </script>
+                    </select>
+                </div>
+                <div class="selectdivvv vv">
+                    <select name=slist class="slist">
+                        <script language="javascript">
+                            var states = new Array("Chọn Tỉnh thành...", "An Giang", "Bac Giang", "Bac Kan", "Bac Lieu", "Bac Ninh", "Ba Ria-Vung Tau", "Ben Tre", "Binh Dinh", "Binh Duong", "Binh Phuoc", "Binh Thuan", "Ca Mau", "Cao Bang", "Dac Lak", "Dac Nong", "Dien Bien", "Dong Nai", "Dong Thap", "Gia Lai", "Ha Giang", "Hai Duong", "Ha Nam", "Ha Tay", "Ha Tinh", "Hau Giang", "Hoa Binh", "Hung Yen", "Khanh Hoa", "Kien Giang", "Kon Tum", "Lai Chau", "Lam Dong", "Lang Son", "Lao Cai", "Long An", "Nam Dinh", "Nghe An", "Ninh Binh", "Ninh Thuan", "Phu Tho", "Phu Yen", "Quang Binh", "Quang Nam", "Quang Ngai", "Quang Ninh", "Quang Tri", "Soc Trang", "Son La", "Tay Ninh", "Thai Binh", "Thai Nguyen", "Thanh Hoa", "Thua Thien-Hue", "Tien Giang", "Tra Vinh", "Tuyen Quang", "Vinh Long", "Vinh Phuc", "Yen Bai", "Can Tho", "Da Nang", "Hai Phong", "Hanoi", "Ho Chi Minh");
+                            for (var hi = 0; hi < states.length; hi++)
+                                document.write("<option value=\"" + states[hi] + "\">" + states[hi] + "</option>");
+                        </script>
+                    </select>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-info ah13"
+                        style="width: 180px;height: 50px;margin-top: 5px;border-radius: 30px;">
+                        <a href="" class="btn-nav">Tìm Kiếm</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------------content-jobsssss-------------------------------------------------------------------------- -->
+        <div style="width: 100%;background-color: #f8f9fa;">
+            <div style="padding:50px 30px;" class="content">
+                <div class="cnt1">
+                    <div
+                        style="text-align: center;margin-top: 25px;padding-bottom: 25px;border-bottom: 1px solid grey;">
+                        <i class="fa-brands fa-hotjar" style="font-size: 20px; color: red;"></i>
+                        <b><i>Khám Phá Các Công Việc Thịnh Hành</i></b>
+                    </div>
+                    <div style="margin-top: 20px;" class="nav-bar">
+                        <div style="margin-left: 20px;">
+                            <b>- Chức Danh:</b>
+                        </div>
+                        <ul class="list-ft">
+                            <li style="margin-top: 10px;">
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Nhân Viên Kinh Doanh
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Nhân Viên Kế Toán
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Nhân Viên Kỹ Thuật
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Nhân Viên Bán Hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Nhân Viên Hành Chính
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Kế Toán Tổng Hợp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Nhân Viên Văn Phòng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Nhân Viên Marketing
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-top: 30px;" class="nav-bar">
+                        <div style="margin-left: 20px;">
+                            <b> - Thể Loại Việc:</b>
+                        </div>
+                        <ul class="list-ft ab">
+                            <li style="margin-top: 10px;">
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Full Time
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Permanent
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Part Time
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Internship
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Contract
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-angles-right"></i> Casual/Temporary
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-top: 30px;" class="nav-bar">
+                        <div style="margin-left: 20px;">
+                            <b>- Các Công Ty Được Tìm Kiếm Nhiều Nhất:</b>
+                        </div>
+                        <ul class="list-ft ac">
+                            <li style="margin-top: 10px;">
+                                <a href="">
+                                    <i class="fa-solid fa-building" style="margin-right: 5px;"></i>NFQ Asia (8bit
+                                    Rockstars)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-building" style="margin-right: 5px;"></i> Knorex
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-building" style="margin-right: 5px;"></i> Restaff
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-building" style="margin-right: 5px;"></i>
+                                    KMS Technology
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-building" style="margin-right: 5px;"></i> Hybrid Technologies
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-building" style="margin-right: 5px;"></i> Techbase Vietnam
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="margin-top: 30px;" class="nav-bar">
+                        <div style="margin-left: 20px;">
+                            <b>- Các Địa Điểm Được Tìm Kiếm Nhiều Nhất:</b>
+                        </div>
+                        <ul class="list-ft ad">
+                            <li style="margin-top: 10px;">
+                                <a href="">
+                                    <i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i>Hà Nội
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i>TP.Hồ Chí Minh
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i>Đà Nẵng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i> Nghệ An
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i> Huế
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i> Đà Lạt
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cnt2">
+                    <div class="ah14"
+                        style="margin-top: 25px;padding-left: 40px;padding-bottom: 25px;border-bottom: 1px solid grey;">
+                        <i class="fa-solid fa-circle-exclamation"
+                            style="font-size: 20px;color:yellow ;margin-right:10px ;"></i>
+                        <b><i>Công Việc Gợi Ý</i></b>
+
+                    </div>
+                    <div class="content1" style="margin: 20px 15px;padding: 1.5rem;">
+                        <div class="cnttt1-tt1">
+                            <div class="doctor-img">
+                                <a href="">
+                                    <img src="./assets/newjob/anh1.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+
+                            <div class="doc-info-cont">
+                                <h4 class="doc-name"><a href="#/employerProfile/6169a8431e68000006001ee2"
+                                        style="text-decoration: none;">VKU group</a>
+                                </h4>
+                                <p class="doc-speciality">Java - Need programmer</p>
+                                <h5 class="doc-department"><img src="assets/newjob/programmer.png" class="img-fluid"
+                                        alt="">Programmer</h5>
+                                <div class="rating">
+                                    <div class="react-stars-wrapper-04217249013456872" style="display: flex;">
+                                        <div aria-label="add rating by typing an integer from 0 to 5 or pressing arrow keys"
+                                            class="undefined react-stars" style="overflow: hidden; position: relative;">
+                                            <span class="" data-index="0" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="1" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="2" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="3" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="4" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: gray; font-size: 24px;">★</span>
+                                            <p role="status" style="position: absolute; left: -200rem;">4.4</p>
+                                        </div>
+                                    </div><span class="d-inline-block average-rating">(4)</span>
+                                </div>
+                                <div class="clinic-details">
+                                    <p class="doc-location"><i class="fas fa-map-marker-alt"></i> Nguyen Minh Chau,
+                                        Phường Hoà Quý, Quận Ngũ Hành Sơn, Thành phố Đà Nẵng</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="doc-info-right">
+                            <div class="clini-infos">
+                                <ul style="list-style-type: none;">
+                                    <li><i class="far fa-clock"></i> Deadline <br>
+                                        2021-12-24</li>
+                                    <li style="margin-top: 10px;"><i class="far fa-money-bill-alt"></i> 2000 USD</li>
+                                </ul>
+                            </div>
+                            <div class="clinic-booking" style="text-align: center;"><a class="view-pro-btn"
+                                    href="seeDetail.html" style="text-decoration: none;margin-top: 35px">See details</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="content1" style="margin: 20px 15px;padding: 1.5rem;">
+                        <div class="cnttt1-tt1">
+                            <div class="doctor-img">
+                                <a href="">
+                                    <img src="./assets/newjob/anh2.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+
+                            <div class="doc-info-cont">
+                                <h4 class="doc-name"><a href="#/employerProfile/6169a8431e68000006001ee2"
+                                        style="text-decoration: none;">Enouvo IT Solution</a>
+                                </h4>
+                                <p class="doc-speciality"> DevOps Engineer - Enouvo Solution</p>
+                                <h5 class="doc-department"><img src="assets/newjob/programmer.png" class="img-fluid"
+                                        alt="">Programmer</h5>
+                                <div class="rating">
+                                    <div class="react-stars-wrapper-04217249013456872" style="display: flex;">
+                                        <div aria-label="add rating by typing an integer from 0 to 5 or pressing arrow keys"
+                                            class="undefined react-stars" style="overflow: hidden; position: relative;">
+                                            <span class="" data-index="0" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="1" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="2" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="3" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="4" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: gray; font-size: 24px;">★</span>
+                                            <p role="status" style="position: absolute; left: -200rem;">4.4</p>
+                                        </div>
+                                    </div><span class="d-inline-block average-rating">(4)</span>
+                                </div>
+                                <div class="clinic-details">
+                                    <p class="doc-location"><i class="fas fa-map-marker-alt"></i> 18 An Nhơn 3, Phường
+                                        An Hải Bắc, Quận Sơn Trà, Thành phố Đà Nẵng</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="doc-info-right">
+                            <div class="clini-infos">
+                                <ul style="list-style-type: none;">
+                                    <li><i class="far fa-clock"></i> Deadline <br>
+                                        2022-06-01</li>
+                                    <li style="margin-top: 10px;"><i class="far fa-money-bill-alt"></i> 3500 USD</li>
+                                </ul>
+                            </div>
+                            <div class="clinic-booking" style="text-align: center;"><a class="view-pro-btn"
+                                    href="seeDetail.html" style="text-decoration: none;margin-top: 35px">See details</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="content1" style="margin: 20px 15px;padding: 1.5rem;">
+                        <div class="cnttt1-tt1">
+                            <div class="doctor-img">
+                                <a href="">
+                                    <img src="./assets/newjob/anh3.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+
+                            <div class="doc-info-cont">
+                                <h4 class="doc-name"><a href="#/employerProfile/6169a8431e68000006001ee2"
+                                        style="text-decoration: none;">Enouvo IT Solution</a>
+                                </h4>
+                                <p class="doc-speciality">ReactJS Developer - Senior Frontend ReactJs Developer</p>
+                                <h5 class="doc-department"><img src="assets/newjob/developer2.png" class="img-fluid"
+                                        alt="">Web developer</h5>
+                                <div class="rating">
+                                    <div class="react-stars-wrapper-04217249013456872" style="display: flex;">
+                                        <div aria-label="add rating by typing an integer from 0 to 5 or pressing arrow keys"
+                                            class="undefined react-stars" style="overflow: hidden; position: relative;">
+                                            <span class="" data-index="0" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="1" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="2" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="3" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="4" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: gray; font-size: 24px;">★</span>
+                                            <p role="status" style="position: absolute; left: -200rem;">4.4</p>
+                                        </div>
+                                    </div><span class="d-inline-block average-rating">(4)</span>
+                                </div>
+                                <div class="clinic-details">
+                                    <p class="doc-location"><i class="fas fa-map-marker-alt"></i> 18 An Nhơn 3, Phường
+                                        An Hải Bắc, Quận Sơn Trà, Thành phố Đà Nẵng</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="doc-info-right">
+                            <div class="clini-infos">
+                                <ul style="list-style-type: none;">
+                                    <li><i class="far fa-clock"></i> Deadline <br>
+                                        2022-07-08</li>
+                                    <li style="margin-top: 10px;"><i class="far fa-money-bill-alt"></i> 1800 USD</li>
+                                </ul>
+                            </div>
+                            <div class="clinic-booking" style="text-align: center;"><a class="view-pro-btn"
+                                    href="seeDetail.html" style="text-decoration: none;margin-top: 35px">See details</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="content1" style="margin: 20px 15px;padding: 1.5rem;">
+                        <div class="cnttt1-tt1">
+                            <div class="doctor-img">
+                                <a href="">
+                                    <img src="assets/newjob/anh4.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+
+                            <div class="doc-info-cont">
+                                <h4 class="doc-name"><a href="#/employerProfile/6169a8431e68000006001ee2"
+                                        style="text-decoration: none;">TMA Solution</a>
+                                </h4>
+                                <p class="doc-speciality">UI-UX Designer - Designer</p>
+                                <h5 class="doc-department"><img src="assets/newjob/designer.png" class="img-fluid"
+                                        alt="">Designer</h5>
+                                <div class="rating">
+                                    <div class="react-stars-wrapper-04217249013456872" style="display: flex;">
+                                        <div aria-label="add rating by typing an integer from 0 to 5 or pressing arrow keys"
+                                            class="undefined react-stars" style="overflow: hidden; position: relative;">
+                                            <span class="" data-index="0" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="1" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="2" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="3" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 24px;">★</span><span
+                                                class="" data-index="4" data-forhalf="★"
+                                                style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: gray; font-size: 24px;">★</span>
+                                            <p role="status" style="position: absolute; left: -200rem;">4.4</p>
+                                        </div>
+                                    </div><span class="d-inline-block average-rating">(4)</span>
+                                </div>
+                                <div class="clinic-details">
+                                    <p class="doc-location"><i class="fas fa-map-marker-alt"></i>13, Phường Thuận Phước,
+                                        Quận Hải Châu, Thành phố Đà Nẵng</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="doc-info-right">
+                            <div class="clini-infos">
+                                <ul style="list-style-type: none;">
+                                    <li><i class="far fa-clock"></i> Deadline <br>
+                                        2022-12-10</li>
+                                    <li style="margin-top: 10px;"><i class="far fa-money-bill-alt"></i> 1945 USD</li>
+                                </ul>
+                            </div>
+                            <div class="clinic-booking" style="text-align: center;"><a class="view-pro-btn"
+                                    href="seeDetail.html" style="text-decoration: none;margin-top: 35px">See details</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="height: 117px;">
+                        <div class="pagination">
+                            <a href="#">«</a>
+                            <a class="active" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">»</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------- Blog ---------------------------------------->
+        <section class="recent-blog reveal" style="padding-bottom: 100px ;">
+            <div class="recent-blog-container">
+                <div class="job-container-header">
+                    <div class="job-header aos-init aos-animate" data-aos="flip-down">
+                        <p class="header-Categories"
+                            style="text-align: center;opacity: 0.5;font-size: 20px;margin-left: -65px;">
+                            Our Blog
+                        </p>
+                        <p class="header-current"
+                            style="margin-top: 50px;text-align: center;margin-left: -65px;font-size: 35px;margin-bottom: 50px;">
+                            <b class="b-job">Blog</b> Mới Nhất
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-down" class="aos-init aos-animate">
+                    <div class="row-blog">
+                        <div class="col-blog">
+                            <div class="img-blog">
+                                <a href="" class="img-blog-link"
+                                    style="background-image: url(./assets/image/blog/images.jfif);">
+                                </a>
+                            </div>
+                            <div class="text-blog">
+                                <div class="time-blog">
+                                    <p>DECEMBER 2, 2022 ADMIN <i class="ti-comment-alt"></i> 3</p>
+                                </div>
+                                <h3 class="header-blog">
+                                    <a href="BlogDetail.html">Hỗ Trợ Triển Khai Phần Mềm Erp
+                                        Công Ty Cổ Phần Tập Đoàn Công Nghệ Absoft</a>
+                                </h3>
+                                <p>
+                                    MÔ TẢ CÔNG VIỆC: <br>
+                                    - Thiết lập giao diện nhập liệu <br>
+                                    - Thiết lập biểu mẫu in <br>
+                                    - Thiết lập công thức tính toán <br>
+                                    - Thiết lập báo cáo thống kê <br>
+                                    - Nhập liệu đối tượng quản lý, danh mục <br>
+                                    - Nhập liệu nghiệp vụ công việc <br>
+                                    - Xem báo cáo thống kê phân tích.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-blog">
+                            <div class="img-blog">
+                                <a href="" class="img-blog-link"
+                                    style="background-image: url(./assets/image/blog/blog1.jpg);">
+                                </a>
+                            </div>
+                            <div class="text-blog">
+                                <div class="time-blog">
+                                    <p>DECEMBER 2, 2022 ADMIN <i class="ti-comment-alt"></i> 3</p>
+                                </div>
+                                <h3 class="header-blog">
+                                    <a href="BlogDetail.html">Nhân Viên SEO, Viết Content Fulltime
+                                        Công Ty Cồ Phần Công Nghệ Homeair Toàn Cầu</a>
+                                </h3>
+                                <p>
+                                    MÔ TẢ CÔNG VIỆC: <br>
+                                    – Xây dựng và quản lý các site vệ tinh. <br>
+                                    – Liên tục theo dõi, phân tích và tối ưu hiệu quả SEO. <br>
+                                    – Nắm bắt và cập nhật kịp thời các thuật toán của Google. <br>
+                                    – Các công việc khác theo sự phân công của Leader.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-blog">
+                            <div class="img-blog">
+                                <a href="" class="img-blog-link"
+                                    style="background-image: url(./assets/image/blog/blog2.jpg);">
+                                </a>
+                            </div>
+                            <div class="text-blog">
+                                <div class="time-blog">
+                                    <p>DECEMBER 2, 2022 ADMIN <i class="ti-comment-alt"></i> 3</p>
+                                </div>
+                                <h3 class="header-blog">
+                                    <a href="BlogDetail.html">Designer
+                                        Công Ty TNHH Giải Pháp Công Nghệ Aibb</a>
+                                </h3>
+                                <p style="margin-top: 30px;">
+                                    MÔ TẢ CÔNG VIỆC: <br>
+                                    - Thiết kế bộ Logo, cover, poster sử dụng cho Social Media <br>
+                                    - Thiết kế UI cho web, mobile, icon, sticker, ảnh sử dụng cho web <br>
+                                    - Lên wireframe, prototype theo yêu cầu <br>
+                                    - Thực hiện các công việc thiết kế đồ hoạ từ người quản lý trực tiếp. <br>
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-blog">
+                            <div class="img-blog">
+                                <a href="" class="img-blog-link"
+                                    style="background-image: url(./assets/image/blog/blog3.png);">
+                                </a>
+                            </div>
+                            <div class="text-blog">
+                                <div class="time-blog">
+                                    <p>DECEMBER 2, 2022 ADMIN <i class="ti-comment-alt"></i> 3</p>
+                                </div>
+                                <h3 class="header-blog">
+                                    <a href="BlogDetail.html">Lập Trình Viên Mobile App
+                                        Công Ty Cổ Phần Tổ Hợp Công Nghệ Ohlaalaa</a>
+                                </h3>
+                                <p style="margin-top:0px">
+                                    MÔ TẢ CÔNG VIỆC: <br>
+                                    - Tham gia phát triển hệ thống sàn thương mại điện tử <br>
+                                    - Sửa lỗi và cải thiện tính năng, hiệu suất sản phẩm . <br>
+                                    - Nghiên cứu, tìm hiểu các công nghệ, mới phục vụ các nhu cầu sản phẩm của công
+                                    ty. <br>
+                                    - Những công việc khác được giao bởi Mentor/ Supervisor/ Manager. <br>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subcribe ">
+            <div class="subcribe-background" style="margin-top: 80px;">
+                <div class="subcribe-container">
+                    <div class="row-sub">
+                        <div class="col-sub aos-init aos-animate" data-aos="flip-left">
+                            <div style="text-align: center;" class="abc">
+                                <h2>Theo dõi bản tin của chúng tôi</h2>
+                            </div>
+                            <p>Luôn luôn cập nhật những thông tin mới nhất về công việc , cũng như các công việc
+                                liên quan tới các bạn</p>
+                            <div class="input-mail-sub">
+                                <form action="" class="input">
+                                    <div class="form-group">
+                                        <input type="text" class="text-mail" placeholder="Vui Lòng Nhập Email">
+                                        <input class="button" type="submit" value="Subcribe">
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------------------------------------------------Footer --------------------------------->
+        <div id="footer">
+            <div class="footer-main">
+                <div class="fta ft1">
+                    <div class="mg-ft1">
+                        <p>
+                        <h2>Theo Dõi Website Qua:</h2>
+                        </p>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+
+                </div>
+                <div class="ft ft2">
+                    <h2>Dành cho người tìm việc</h2>
+                    <ul class="list-ft">
+                        <li>
+                            <a href="NganhNghe.html">
+                                <i class="fa-solid fa-angles-right"></i> Công Việc
+                            </a>
+                        </li>
+                        <li>
+                            <a href="NganhNghe.html">
+                                <i class="fa-solid fa-angles-right"></i> Các ngành Hot
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                <i class="fa-solid fa-angles-right"></i> Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <i class="fa-solid fa-angles-right"></i> Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ft ft3">
+                    <h2>Dành cho nhà tuyển dụng</h2>
+                    <ul class="list-ft">
+                        <li>
+                            <a href="NganhNghe.html">
+                                <i class="fa-solid fa-angles-right"></i> Công việc
+                            </a>
+                        </li>
+                        <li>
+                            <a href="job/company.html">
+                                <i class="fa-solid fa-angles-right"></i> Đề xuất
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                <i class="fa-solid fa-angles-right"></i> Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <i class="fa-solid fa-angles-right"></i> Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ft ft4">
+                    <h2>Chi Tiết Liên Hệ </h2>
+                    <ul class="list-ft2">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i> 470 Tran Dai Nghia,
+                            Ngu Hanh Son, Da Nang
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i> +84 3136 8443
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i> minhtc.21it@vku.udn.vn
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-phu">
+                <p>Terms and ConditionsPolicy</p>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slick slide -->
+    <script>
+
+    </script>
+
+    <script type='text/javascript'>
+        var mql = window.matchMedia('screen and (max-width:  987px)');
+        if (mql.matches) {
+            $(document).ready(function () {
+                $('.col-slide').slick({
+                    // autoplay: true, //tự động chuyển slide
+                    // autoplaySpeed: 2000, //sau bao nhiêu giây đó thì chuyển slide
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
+                });
+            });
+        } else {
+            $(document).ready(function () {
+                $('.col-slide').slick({
+                    // autoplay: true, //tự động chuyển slide
+                    // autoplaySpeed: 2000, //sau bao nhiêu giây đó thì chuyển slide
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
+                });
+            });
+        }
+    </script>
+    <!-- animation header -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <!-- rereal web element on scroll -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+    <!--  -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var bgPattern = document.getElementById("bg")
+            window.addEventListener("scroll", function () {
+                bgPattern.style.backgroundPosition = +window.pageXOffset + "px";
+            })
+        })
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navv");
+            if (x.className === "nav-ull") {
+                x.classList.add("dis-none");
+                console.log(x);
+            } else {
+                x.classList.remove("dis-none");
+                console.log(x);
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
